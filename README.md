@@ -72,7 +72,18 @@ Al entrenar la red **MolecularGNN** estándar (Message Passing) durante 100 épo
 - **Loss Inicial (Época 10)**: Train Loss ~4.39 | Val Loss ~3.07
 - **Loss Final (Época 100)**: Train Loss ~0.40 | Val Loss ~1.78
 
-El modelo demuestra una gran capacidad para extraer y aprender características moleculares subyacentes directamente desde la topología del grafo (SMILES). Adicionalmente, el script autogenera gráficos como `training_metrics.png` y `true_vs_predicted.png` para permitir un análisis visual del encaje de las predicciones a la diagonal ideal y evaluar la generalización del modelo.
+El modelo demuestra una gran capacidad para extraer y aprender características moleculares subyacentes directamente desde la topología del grafo (SMILES). Adicionalmente, el script autogenera gráficos para permitir un análisis visual del encaje de las predicciones a la diagonal ideal y evaluar la generalización del modelo:
+
+### Visualizaciones Generadas
+
+**1. Evolución del Entrenamiento (Loss)**  
+![Training Metrics](training_metrics.png)
+
+**2. Predicción vs Valor Real**  
+![True vs Predicted](true_vs_predicted.png)
+
+**3. Representación 2D de la Molécula (RDKit)**  
+![Molecule Example](molecule.png)
 
 ## �📂 Organización del Proyecto
 
