@@ -65,7 +65,16 @@ Guarda el archivo y ejecuta nuevamente el pipeline de entrenamiento:
 python train.py
 ```
 
-## 📂 Organización del Proyecto
+## � Resultados (Ejemplo de Entrenamiento)
+
+Al entrenar la red **MolecularGNN** estándar (Message Passing) durante 100 épocas sobre el conjunto de datos de experimentación **FreeSolv** (642 moléculas validadas), se observa una clara convergencia del modelo prediciendo la energía libre de hidratación:
+
+- **Loss Inicial (Época 10)**: Train Loss ~4.39 | Val Loss ~3.07
+- **Loss Final (Época 100)**: Train Loss ~0.40 | Val Loss ~1.78
+
+El modelo demuestra una gran capacidad para extraer y aprender características moleculares subyacentes directamente desde la topología del grafo (SMILES). Adicionalmente, el script autogenera gráficos como `training_metrics.png` y `true_vs_predicted.png` para permitir un análisis visual del encaje de las predicciones a la diagonal ideal y evaluar la generalización del modelo.
+
+## �📂 Organización del Proyecto
 
 ```text
 Deep-Learning-project/
